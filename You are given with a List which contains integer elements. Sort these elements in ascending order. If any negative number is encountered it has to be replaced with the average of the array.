@@ -1,0 +1,15 @@
+# Sort and Replace Negatives with Average
+def sort_and_replace_negatives(arr):
+    if not arr:
+        return arr
+    
+    average = sum(arr) / len(arr)
+    arr = [average if x < 0 else x for x in arr]
+    arr.sort()
+    return arr
+
+# Example usage
+numbers = [3, -1, 4, 1, -5, 9, 2, -6]
+sorted_numbers = sort_and_replace_negatives(numbers)
+print(sorted_numbers)
+
