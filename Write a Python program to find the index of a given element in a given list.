@@ -1,0 +1,10 @@
+def find_index(lst, element):
+    if element in lst:
+        return lst.index(element)
+    else:
+        return -1
+
+# Test the function
+my_list = [10, 20, 30, 40, 50]
+element_to_find = 30
+print(f'The index of {element_to_find} in the list is: {find_index(my_list, element_to_find)}')
